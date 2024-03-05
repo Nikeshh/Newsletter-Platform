@@ -2,7 +2,6 @@
 
 import SettingsTab from "@/shared/components/tabs/settings.tabs";
 import useGetMembership from "@/shared/hooks/useGetMembership";
-import useSettingsFilter from "@/shared/hooks/useSettingsFilter";
 import { UserProfile } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
@@ -14,7 +13,7 @@ import { ICONS } from "@/shared/utils/icons";
 import toast from "react-hot-toast";
 
 const Page = () => {
-  const { activeItem } = useSettingsFilter();
+  const [activeItem, setActiveItem] = useState<any>("Profile");
   const { data } = useGetMembership();
   const [apiKey, setApiKey] = useState("");
 
