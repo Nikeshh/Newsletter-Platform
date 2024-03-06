@@ -1,9 +1,12 @@
 import { Tab, Tabs } from "@nextui-org/react";
-import { useState } from "react";
+import { Key, useState } from "react";
 
-const SettingsTab = () => {
-  const [activeItem, setActiveItem] = useState<any>("Profile");
+type Props = {
+  activeItem: string,
+  setActiveItem: (key: Key) => any
+}
 
+const SettingsTab = ({ activeItem, setActiveItem } : Props) => {
   return (
     <Tabs
       variant={"underlined"}

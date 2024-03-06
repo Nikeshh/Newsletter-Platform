@@ -25,7 +25,7 @@ const Emaileditor = ({ subjectTitle }: { subjectTitle: string }) => {
       const { design, html } = data;
       setJsonData(design);
       await sendEmail({
-        userEmail: ["sponsorship@becodemy.com"],
+        userEmail: ["nikeshhbaskaran01@gmail.com"],
         subject: subjectTitle,
         content: html,
       }).then((res) => {

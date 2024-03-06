@@ -105,8 +105,8 @@ const PricingCard = ({ active }: { active: string }) => {
             handleSubscription({
               price:
                 active === "Monthly"
-                  ? "price_1OnaWFSA1WAzNgKlsGN6K4ZW"
-                  : "price_1Onbt8SA1WAzNgKlyrXYlJBG",
+                  ? "price_1Or8qMKI0nAPtrb7ATzZ2xrh"
+                  : "price_1Or8tiKI0nAPtrb7Hxso5UQ4",
             })
           }
         >
@@ -161,8 +161,8 @@ const PricingCard = ({ active }: { active: string }) => {
             handleSubscription({
               price:
                 active === "Monthly"
-                  ? "price_1On2H2SA1WAzNgKlV64Zj6gE"
-                  : "price_1Onf9gSA1WAzNgKlg8NLBP4r",
+                  ? "price_1Or8rFKI0nAPtrb7TufYROC1"
+                  : "price_1Or8uZKI0nAPtrb77g3Z3cEa",
             })
           }
         >

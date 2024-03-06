@@ -13,7 +13,7 @@ import { ICONS } from "@/shared/utils/icons";
 import toast from "react-hot-toast";
 
 const Page = () => {
-  const [activeItem, setActiveItem] = useState<any>("Profile");
+  const [activeItem, setActiveItem] = useState<any>("Customize Profile");
   const { data } = useGetMembership();
   const [apiKey, setApiKey] = useState("");
 
@@ -53,7 +53,7 @@ const Page = () => {
 
   return (
     <div className="w-[85%] p-5">
-      <SettingsTab />
+      <SettingsTab activeItem={activeItem} setActiveItem={setActiveItem} />
       {activeItem === "Customize Profile" && (
         <div className="w-full flex justify-center">
           <UserProfile />
